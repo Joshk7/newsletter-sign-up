@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+:root {
+    /* Primary */
+    --tomato: #FF6155;
+    /* Neutral */
+    --dark-gray: #242742;
+    --pale-gray: #36384D;
+    --gray: #19182B;
+    --white: #FFFFFF;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+.illustration {
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.success {
+    display: none;
+}
+
+.attribution {
+    font-size: 0.75rem;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

@@ -31,21 +31,31 @@ select {
 
 :root {
     /* Primary */
-    --tomato: #FF6155;
+    --tomato: #ff6155;
     /* Neutral */
     --dark-gray: #242742;
-    --pale-gray: #36384D;
-    --gray: #19182B;
-    --white: #FFFFFF;
+    --pale-gray: #36384d;
+    --light-gray: rgb(25, 24, 43, 0.25);
+    --solid-gray: rgb(25, 24, 43, 1);
+    --white: #ffffff;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
+main {
+    height: 100%;
+    background: var(--dark-gray);
+    display: flex;
+    justify-content: stretch;
+}
 
-.illustration {
+.illustration__image {
     width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 footer {
@@ -55,8 +65,141 @@ footer {
     width: 100%;
 }
 
+.signup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    /* Display */
+    /* display: none; */
+}
+
+.signup__wrapper {
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.signup__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.signup__title {
+    font: bold 2.5rem/1 "Roboto";
+    color: var(--dark-gray);
+}
+
+.signup__description {
+    font: normal 1rem/1.5 "Roboto";
+    color: var(--dark-gray);
+}
+
+.signup__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.625rem;
+}
+
+.signup__item {
+    padding: 0;
+    display: flex;
+    column-gap: 1rem;
+    align-items: flex-start;
+}
+
+.signup__list--icon {
+    width: 1.3125rem;
+    height: 1.3125rem;
+}
+
+.signup__item--details {
+    font: normal 1rem/1.5 "Roboto";
+    color: var(--dark-gray);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.email__label {
+    font: bold 0.75rem/1.5 "Roboto";
+    margin-bottom: 0.5rem;
+}
+
+.email__input {
+    padding: 1rem 1.5rem;
+    font: normal 1rem/1.5 "Roboto";
+    color: var(--dark-gray);
+    border-radius: 0.5rem;
+    border: none;
+    outline: 1px solid var(--light-gray);
+    outline-offset: -1px;
+}
+
+.email__input:hover,
+.email__input:focus {
+    outline: 1px solid var(--solid-gray);
+}
+
+.button {
+    width: 100%;
+    background: var(--dark-gray);
+    color: var(--white);
+    border-radius: 0.5rem;
+    padding-block: 0.875rem;
+    font: bold 1rem/1.5 "Roboto";
+    border: none;
+}
+
+.button:hover,
+.button:focus {
+    cursor: pointer;
+    background: linear-gradient(to bottom left, #FF6A3A, #FF527B)
+}
+
 .success {
+    background: var(--white);
+    min-height: 100vh;
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    /* Display */
     display: none;
+}
+
+.success__wrapper {
+    margin-block: auto;
+}
+
+.success__picture {
+    margin-bottom: 2.5rem;
+}
+
+.success__title {
+    font: bold 2.5rem/1 "Roboto";
+    color: var(--dark-gray);
+    margin-bottom: 1.5rem;
+}
+
+.success__description {
+    font: normal 1rem/1.5 "Roboto";
+    color: var(--dark-gray);
+}
+
+.success__button {
+    margin-top: auto;
 }
 
 .attribution {
@@ -65,4 +208,59 @@ footer {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+.visibility {
+    display: none;
+}
+
+@media screen and (min-width: 850px) {
+    main {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signup {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: stretch;
+        border-radius: 2.25rem;
+        max-width: 928px;
+        width: 98%;
+    }
+
+    .signup__wrapper {
+        padding-inline: 0;
+        padding-block: 2rem;
+        margin-inline: 4rem;
+        max-width: 376px;
+    }
+
+    .signup__title {
+        font-size: 3.5rem;
+    }
+
+    .illustration {
+        padding: 1.5rem 1.5rem 1.5rem 0;
+    }
+
+    .illustration__image {
+        height: 100%;
+    }
+
+    .success {
+        max-width: 504px;
+        min-height: auto;
+        padding: 3rem 4rem 4rem 4rem;
+        border-radius: 2.25rem;
+    }
+
+    .success__wrapper {
+        margin-top: 0;
+        margin-bottom: 2.5rem;
+    }
+
+    .success__button {
+        margin-top: 0;
+    }
 }

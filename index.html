@@ -27,43 +27,57 @@
         <main>
             <!-- Sign-up form start -->
             <section class="signup">
-                <picture>
+                <picture class="illustration">
+                    <source
+                        srcset="/assets/images/illustration-sign-up-desktop.svg"
+                        media="(min-width: 850px)"
+                    >
                     <img
-                        class="illustration"
+                        class="illustration__image"
                         src="/assets/images/illustration-sign-up-mobile.svg"
                         alt="Sign up illustration"
                     />
                 </picture>
                 <div class="signup__wrapper">
-                    <div>
-                        <h1>Stay updated!</h1>
-                        <p>
+                    <div class="signup__content">
+                        <h1 class="signup__title">Stay updated!</h1>
+                        <p class="signup__description">
                             Join 60,000+ product managers receiving monthly
                             updates on:
                         </p>
-                        <ul>
-                            <li>
-                                <p>
+                        <ul class="signup__list">
+                            <li class="signup__item">
+                                <img src="/assets/images/icon-list.svg" alt="signup__item--icon">
+                                <p class="signup__item--details">
                                     Product discovery and building what matters
                                 </p>
                             </li>
-                            <li>
-                                <p>Measuring to ensure updates are a success</p>
+                            <li class="signup__item">
+                                <img src="/assets/images/icon-list.svg" alt="signup__item--icon">
+                                <p class="signup__item--details">
+                                    Measuring to ensure updates are a success
+                                </p>
                             </li>
-                            <li><p>And much more!</p></li>
+                            <li class="signup__item">
+                                <img src="/assets/images/icon-list.svg" alt="signup__item--icon">
+                                <p class="signup__item--details">
+                                    And much more!
+                                </p>
+                            </li>
                         </ul>
                     </div>
-                    <form action="">
-                        <div>
-                            <label for="email">Email address</label>
+                    <form class="form" action="">
+                        <div class="email">
+                            <label class="email__label" for="email">Email address</label>
                             <input
+                                class="email__input"
                                 id="email"
                                 type="text"
                                 name="email"
                                 placeholder="email@company.com"
                             />
                         </div>
-                        <button>Subscribe to monthly newsletter</button>
+                        <button class="button">Subscribe to monthly newsletter</button>
                     </form>
                 </div>
             </section>
@@ -71,22 +85,22 @@
             <!-- Sign-up form end -->
 
             <!-- Success message start -->
-            <section class="success">
+            <section class="success visible">
                 <div class="success__wrapper">
-                    <picture>
+                    <picture class="success__picture">
                         <img
                             src="/assets/images/icon-success.svg"
                             alt="Success"
                         />
                     </picture>
-                    <h1>Thanks for subscribing!</h1>
-                    <p>
+                    <h1 class="success__title">Thanks for subscribing!</h1>
+                    <p class="success__description">
                         A confirmation email has been sent to
-                        ash@loremcompany.com. Please open it and click the
+                        <strong>ash@loremcompany.com</strong>. Please open it and click the
                         button inside to confirm your subscription
                     </p>
                 </div>
-                <button>Dismiss message</button>
+                <button class="button success__button">Dismiss message</button>
             </section>
 
             <!-- Success message end -->

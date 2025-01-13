@@ -104,15 +104,10 @@ footer {
 }
 
 .signup__item {
-    padding: 0;
-    display: flex;
-    column-gap: 1rem;
-    align-items: flex-start;
-}
-
-.signup__list--icon {
-    width: 1.3125rem;
-    height: 1.3125rem;
+    padding-left: 2.3125rem;
+    background-image: url("/assets/images/icon-list.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
 }
 
 .signup__item--details {

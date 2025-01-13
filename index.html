@@ -68,7 +68,10 @@
                     </div>
                     <form class="form" action="">
                         <div class="email">
-                            <label class="email__label" for="email">Email address</label>
+                            <div class="email__wrapper">
+                                <label class="email__label" for="email">Email address</label>
+                                <span class="email__error visibility" aria-live="polite" id="email-error">Valid email required</span>
+                            </div>
                             <input
                                 class="email__input"
                                 id="email"
@@ -85,7 +88,7 @@
             <!-- Sign-up form end -->
 
             <!-- Success message start -->
-            <section class="success visible">
+            <section class="success visibility">
                 <div class="success__wrapper">
                     <picture class="success__picture">
                         <img

@@ -54,7 +54,7 @@ main {
 
 .illustration__image {
     width: 100%;
-    max-width: 650px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -70,8 +70,6 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: var(--white);
-    /* Display */
-    /* display: none; */
 }
 
 .signup__wrapper {
@@ -133,9 +131,19 @@ footer {
     flex-direction: column;
 }
 
+.email__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.email__error {
+    font: bold 0.75rem/1.5 "Roboto";
+    color: var(--tomato);
+}
+
 .email__label {
     font: bold 0.75rem/1.5 "Roboto";
-    margin-bottom: 0.5rem;
 }
 
 .email__input {
@@ -148,9 +156,25 @@ footer {
     outline-offset: -1px;
 }
 
+
 .email__input:hover,
 .email__input:focus {
     outline: 1px solid var(--solid-gray);
+}
+
+.error {
+    outline: 1px solid var(--tomato);
+    background: rgba(255, 97, 85, 0.15);
+    color: var(--tomato);
+}
+
+.error:hover,
+.error:focus {
+    outline: 1px solid var(--tomato);
+}
+
+.error::placeholder {
+    color: rgba(255, 97, 85, 0.5)
 }
 
 .button {
@@ -166,7 +190,8 @@ footer {
 .button:hover,
 .button:focus {
     cursor: pointer;
-    background: linear-gradient(to bottom left, #FF6A3A, #FF527B)
+    background: linear-gradient(to bottom left, #FF6A3A, #FF527B);
+    box-shadow: 0 1rem 2rem 0 rgba(255, 97, 85, 0.5);
 }
 
 .success {
@@ -175,8 +200,6 @@ footer {
     padding: 2.5rem 1.5rem;
     display: flex;
     flex-direction: column;
-    /* Display */
-    display: none;
 }
 
 .success__wrapper {

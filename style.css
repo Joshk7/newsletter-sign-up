@@ -132,7 +132,7 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-.email__error {
+.error {
     font: bold 0.75rem/1.5 "Roboto";
     color: var(--tomato);
 }
@@ -141,7 +141,7 @@ footer {
     font: bold 0.75rem/1.5 "Roboto";
 }
 
-.email__input {
+.valid {
     padding: 1rem 1.5rem;
     font: normal 1rem/1.5 "Roboto";
     color: var(--dark-gray);
@@ -151,24 +151,24 @@ footer {
     outline-offset: -1px;
 }
 
-
-.email__input:hover,
-.email__input:focus {
+.valid:hover,
+.valid:focus {
     outline: 1px solid var(--solid-gray);
 }
 
-.error {
+.invalid {
     outline: 1px solid var(--tomato);
     background: rgba(255, 97, 85, 0.15);
     color: var(--tomato);
-}
-
-.error:hover,
-.error:focus {
     outline: 1px solid var(--tomato);
 }
 
-.error::placeholder {
+.invalid:hover,
+.invalid:focus {
+    outline: 1px solid var(--tomato);
+}
+
+.invalid::placeholder {
     color: rgba(255, 97, 85, 0.5)
 }
 

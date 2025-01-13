@@ -22,11 +22,12 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./style.css" />
+        <script defer src="/script.js"></script>
     </head>
     <body>
         <main>
             <!-- Sign-up form start -->
-            <section class="signup">
+            <section id="signup" class="signup">
                 <picture class="illustration">
                     <source
                         srcset="/assets/images/illustration-sign-up-desktop.svg"
@@ -63,24 +64,24 @@
                             </li>
                         </ul>
                     </div>
-                    <form class="form" action="">
+                    <form class="form" id="form" action="">
                         <div class="email">
                             <div class="email__wrapper">
                                 <label class="email__label" for="email"
                                     >Email address</label
                                 >
                                 <span
-                                    class="email__error visibility"
+                                    class="error"
                                     aria-live="polite"
-                                    id="email-error"
-                                    >Valid email required</span
+                                    id="error"
+                                    ></span
                                 >
                             </div>
                             <input
-                                class="email__input"
+                                class="valid"
                                 id="email"
-                                type="text"
                                 name="email"
+                                type="text"
                                 placeholder="email@company.com"
                             />
                         </div>
@@ -94,7 +95,7 @@
             <!-- Sign-up form end -->
 
             <!-- Success message start -->
-            <section class="success visibility">
+            <section id="success" class="success visibility">
                 <div class="success__wrapper">
                     <picture class="success__picture">
                         <img
@@ -109,7 +110,7 @@
                         and click the button inside to confirm your subscription
                     </p>
                 </div>
-                <button class="button success__button">Dismiss message</button>
+                <button id="dismiss" class="button success__button">Dismiss message</button>
             </section>
 
             <!-- Success message end -->

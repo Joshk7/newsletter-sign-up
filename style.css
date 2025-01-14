@@ -40,6 +40,10 @@ select {
     --white: #ffffff;
 }
 
+html {
+    background: var(--dark-gray);
+}
+
 html,
 body {
     height: 100%;
@@ -47,7 +51,6 @@ body {
 
 main {
     height: 100%;
-    background: var(--dark-gray);
     display: flex;
     justify-content: stretch;
 }
@@ -223,7 +226,7 @@ footer {
 .attribution {
     font: normal 1rem/1 "Roboto";
     text-align: center;
-    color: var(--white);
+    color: var(--dark-gray);
 }
 .attribution a {
     color: var(--tomato);
@@ -282,5 +285,9 @@ footer {
 
     .success__button {
         margin-top: 0;
+    }
+
+    .attribution {
+        color: var(--white);
     }
 }

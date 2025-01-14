@@ -40,10 +40,6 @@ select {
     --white: #ffffff;
 }
 
-html {
-    background: var(--dark-gray);
-}
-
 html,
 body {
     height: 100%;
@@ -238,6 +234,10 @@ footer {
 }
 
 @media screen and (min-width: 850px) {
+    html {
+        background: var(--dark-gray);
+    }
+
     main {
         justify-content: center;
         align-items: center;

@@ -2,8 +2,10 @@ const form = document.getElementById("form");
 const email = document.getElementById("email");
 const error = document.getElementById("error");
 
+
 const signup = document.getElementById("signup");
 const success = document.getElementById("success");
+const confirm = document.getElementById("confirm");
 const dismiss = document.getElementById("dismiss");
 
 const emailRegExp =
@@ -43,6 +45,7 @@ const handleSubmit = (event) => {
     if (validity) {
         signup.classList.toggle("visibility");
         success.classList.toggle("visibility");
+        confirm.textContent = email.value;
     }
 };
 

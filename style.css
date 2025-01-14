@@ -58,13 +58,6 @@ main {
     margin: 0 auto;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
 .signup {
     width: 100%;
     display: flex;
@@ -220,12 +213,21 @@ footer {
     margin-top: auto;
 }
 
+footer {
+    position: fixed;
+    bottom: 0.25rem;
+    left: 0;
+    width: 100%;
+}
+
 .attribution {
-    font-size: 0.75rem;
+    font: normal 1rem/1 "Roboto";
     text-align: center;
+    color: var(--white);
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--tomato);
+    text-decoration: none;
 }
 
 .visibility {
